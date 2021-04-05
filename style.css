@@ -1,0 +1,143 @@
+body {
+    margin: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h3{
+    list-style-type: none;
+}
+
+
+
+.container{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    /*margin-top: 150px;*/
+    grid-gap: 20px;
+    grid-template-columns: 1fr 3fr;
+}    
+
+
+
+header,
+footer{
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    /* or grid-column: 1/3; (shortcut)*/
+}
+
+
+footer{
+    height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: dimgray;
+}
+
+
+.sidebar{
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+
+   
+}
+.subheader{
+    grid-column-start: 1; 
+    grid-column-end: 4;
+}
+/*
+@media (min-width:900px) {
+    .container{
+        display: grid;
+        width: 100%;
+        margin: 0 auto;
+        /*margin-top: 150px;
+        grid-gap: 10px;
+        grid-template-columns: .5fr ;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 10px;
+    
+       
+    }
+          }
+          */
+.card{
+    background-color: lightgray;
+    padding: 15px;
+    padding-top: 0px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    line-height: 2;
+}
+
+button{
+    color: white;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+
+.button1{
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+
+  padding: 10px 25px;
+  border-style: solid;
+}
+
+.button2{
+    color: deepskyblue;
+    border-color: deepskyblue;
+    padding: 10px 25px;
+    background: transparent;
+    border-style: solid;
+
+  }
+
+  a:link {
+    text-decoration: none;
+    color: deepskyblue;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: deepskyblue;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color:darkorange;
+  }
+  
+  a:active {
+    text-decoration: underline;
+
+
+
+
+
+/*
+#gridCards {}
+
+#Card1 {}
+
+#Card2 {}
+
+#Card3 {}*/
